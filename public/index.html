@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Hot Coffee</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+
+        <div class="flex items-center justify-between">
+
+            <div class="text-[3.2rem] text-[#FFB730] font-bold font hover:text-[#fbdfc2] brightness-100">HotCoffee</div>
+            <img src="images/7231838_hot_water_cup_coffee_tea_icon (1).png" alt="" class="px-5 brightness-100">
+
+        </div>
+
+        <ul
+            class="lg:flex lg:items-center bg-inherit lg:bg-transparent z-[-1] lg:z-auto lg:static absolute w-full left-0 lg:w-auto lg:py-0 py-4 md:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li>
+                <a href="#" class="nav_items">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav_items">Menu</a>
+            </li>
+            <li>
+                <a href="#" class="nav_items">Services</a>
+            </li>
+            <li>
+                <a href="#" class="nav_items">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="nav_items">About</a>
+
+            </li>
+        </ul>
+
+        <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)" class="text-[#E1A161]"></ion-icon>
+        </span>
+
+    </div>
+    <!-- navbar -->
+
+
+    <!-- background-image -->
+    <div class="#">
+        <img src="./images/coffee-2358388.jpg" class="h-screen w-screen object-cover">
+    </div>
+    <!-- background-image -->
+
+    <!-- body -->
+    <div class="w-full">
+        <div class="absolute p-4 top-[70%] lg:top-[52%] flex justify-center lg:justify-start w-full">
+            <h1 class="text-[3rem] lg:text-[4rem] font-semibold text-[#f4f2f0] font  animate-pulse">
+                Welcome to HotCoffee</h1>
+        </div>
+
+        <div class="flex items-center lg:justify-start md:justify-center ">
+            <div class="absolute p-4 brightness-200 top-[65%]">
+
+                <h1 class="text-[1.2rem] font-semibold text-[#f4f2f0] mx-2 hidden lg:block">Start Your Day With a Hot
+                    Coffee
+                </h1>
+                <p class="text-[0.9rem] font-semibold text-[#f4f2f0] mx-2  hidden lg:block">Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Vero,cum! Repell Vero, cum!adipi</p>
+                <p class="text-[0.9rem] font-semibold text-[#f4f2f0] mx-2  hidden lg:block">Lorem ipsum dolor sit amet
+                    consectetur elit.
+                    Repellenduselit.Repellendus Repellendus</p>
+            </div>
+        </div>
+
+        <div
+            class="absolute p-4 brightness-200 top-[84%] justify-center lg:top-[80%] w-full flex lg:justify-start md:justify-center">
+            <button class="btn">
+                Get Start</button>
+        </div>
+    </div>
+    <!-- body -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+    </head>
+</body>
+
+</html>
